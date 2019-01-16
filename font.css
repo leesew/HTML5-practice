@@ -1,0 +1,31 @@
+p { font-family: "Segoe UI"; }
+  .no { font-style: normal; font-size: 20px;}
+  .it { font-style: serif; font-size: 20px; }
+  .ob { font-style: oblique; font-size: 20px;}
+  .hh { font-style: italic; font-size: 22px;}
+  .sk { font-size: 50px; color:greenyellow;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;}
+  .asd { font-size: 50px; color:gold;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;}
+  .p1 { font-size: 22px; color:violet;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em yellow;}
+  .p0 { font-size: 22px; color: red;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em yellowgreen;}
+  .f1 { font-size: 22px; color: gray;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em white;}
+  .f2 { font-size: 22px; color: gold;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em orange;}
+  .f3 { font-size: 22px; color: greenyellow;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em white;}
+  .f4 { font-size: 22px; color: darkred;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;}
+  .f5 { font-size: 22px; color: yellow;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;}
+  .f6 { font-size: 50px; color: orange;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em gray;}
+  .f7 { font-size: 50px; color: blue;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em white;}
+  .f8 { font-size: 50px; color: violet;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em white;}
+  .sk1 { font-size: 20px; color:greenyellow;
+  text-shadow: 1px 1px 2px black, 0 0 1em blue, 0 0 0.2em blue;}

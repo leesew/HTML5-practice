@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+
+<style>
+h3, li {color : violet;}
+ /* 태그 이름 셀렉터 */
+li:first-letter {color : red;}
+/* li열에 첫글자 색만 변경 */
+h3:hover {background : yellowgreen;}
+ /* 마우스 올릴시 색변경 내리면 원위치 */
+.alert {color : red;}
+body.back {background : aliceblue;}
+/* clsss 셀럭터 */
+#list {background : mistyrose;}
+/* id 셀럭터 */
+#list span { color : forestgreen;}
+/* 자손 셀렉터 */
+ul strong {color : dodgerblue; }
+/* 자손셀렉터 */
+div > strong {background : yellow;}
+/* 자식셀렉터 */
+* {color : green;}
+</style>
+<body class="back">
+<h3>Web programming</h3>
+<hr>
+<div>
+	<div>2학기 <strong>학습내용</strong></div>
+	<ul id="list"> <!--id 셀럭터 적용-->
+
+		<li><span>HTML5</span></li>
+		<li><strong>CSS</strong></li>
+		<li>JAVASCRIPT</li>
+	</ul></div>
+	<div class="alert">60점 이하는 F! </div>
+</div>
+</body>
+</html>

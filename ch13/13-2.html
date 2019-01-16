@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>오디오 재생 리스트</title>
+<style>
+td.index {
+	border : 1px solid yellowgreen;
+	padding-left : 3px;
+	padding-right : 3px;
+}
+th {
+	width : 200px;
+	text-align : left;
+	border-bottom : 1px solid gray;
+}
+
+</style>
+</head>
+<body>
+<h3>오디오 재생</h3>
+<hr>
+<audio id="audio" src="실습media/Aegukga.mp3" autoplay loop controls></audio>
+<script>
+	function control(e){
+		var id = e.target.id;
+		if(id == "play")
+			audio.play()
+		else if(id == "pause")
+			audio.pause();
+
+}
+</script>
+<table>
+<tr><td class="index">1</td><th>애국가</th>
+	<td><button id="play" onclick="control(event)">재생</button></td>
+	<td><button id="pause" onclick="control(event)">중지</button></td></tr>
+<tr><td class="index">2</td><th>Moon Glow</th>
+	<td><button id="play" onclick="control(event)">재생</button></td>
+	<td><button id="pause" onclick="control(event)">중지</button></td></tr>
+<tr><td class="index">3</td><th>Embraceable You</th>
+	<td><button id="play" onclick="control(event)">재생</button>
+	<td><button id="pause" onclick="control(event)">중지</button></td></tr>
+</table>
+</body>
+</html>

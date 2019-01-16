@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>이미지 커서 만들기</title>
+<style>
+	img {
+			width:100px; height:100px;
+			}
+</style>
+</head>
+<body>
+	<h3>이미지 커서 만들기</h3>
+		마우스를 움직이면 이미지로 만든 커서가 마우스를 따라 다닙니다.
+		<div>
+		<img id="img" style="position:absolute" src="실습media/spongebob.png">
+		</div>
+	<script>
+		var img =	document.getElementById("img");
+	 						document.onmousemove = function(e) {
+								img.style.left = e.clientX + "px";
+								img.style.top = e.clientY + "px";
+							}
+	</script>
+</body>
+</html>

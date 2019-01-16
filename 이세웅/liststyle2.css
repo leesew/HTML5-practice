@@ -1,0 +1,8 @@
+ul {
+  background : none;
+  padding : 10px 10px 10px 30px;
+  list-style-position : inline;
+  list-style-image : url("실습media/marker.png");
+
+}
+ul li:hover {background: silver;}

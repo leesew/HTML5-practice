@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Document</title>
+</head>
+<script>
+var p1 = {x:1, y:1};
+var p2 = {x:4, y:5};
+
+var a = Big(p2.y - p1.y).div(p2.x - p1.x); // 4/3, fine
+var b = Big(p2.y).minus(a.times(p2.x)); // -1/3, fine
+
+Big(p2.y).minus(b).div(a).valueOf() // 4, fine
+Big(p1.y).minus(b).div(a).valueOf() // 0.99999 : problem, it should be 1
+</script>
+<body>
+
+</body>
+</html>

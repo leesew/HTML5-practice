@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>클릭하면 2,3,4배로 늘어납니다.</title>
+		<script>
+			var n = 2;
+			function scale(obj) {
+				obj.style.transform = "scale(" + n + "," + 1 + ")";
+				n=2; n<=4; n++;
+			}
+		</script>
+</head>
+<body>
+<h3>클릭하면 2,3,4배로 늘어납니다.</h3>
+<hr>
+	<img src="실습media/spongebob.png" width="100px" height="100px" alr="animaiton"
+				onclick="scale(this)">
+</body>
+</html>

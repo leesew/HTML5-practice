@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+        @import url(font.css);
+        @import url(liststyle2.css);
+
+        html { background:url("실습media/p3b0.jpg")
+        no-repeat center center fixed;
+        background-size: cover; }
+
+        .marquee {
+  				width:900px;
+				  padding:0.5em 0;
+  				overflow:hidden;
+  				background-color:none;
+  				margin-bottom:10px;
+  				position:relative;
+				}
+
+			  .marquee p:after {
+  			  content:"";
+  			  white-space:nowrap;
+  			  padding-right:50px;
+			  }
+
+			  .marquee p {
+  			  margin:0;
+  			  padding-left:900px;
+  			  display:inline-block;
+  			  white-space:nowrap;
+
+          animation-name:marquee;
+          animation-timing-function:linear;
+          animation-duration:10s;
+          animation-iteration-count:infinite;
+        }
+
+        @keyframes marquee {
+          from   { transform: translate(0%);}
+          99%,to { transform: translate(-100%);}
+        }
+        .marquee1 {
+          width:500px;
+          padding:0.5em 0;
+          overflow:hidden;
+          background-color:none;
+          margin-bottom:10px;
+          position:relative;
+        }
+
+        .marquee1 p:after {
+          content:"";
+          white-space:nowrap;
+          padding-right:50px;
+        }
+
+        .marquee1 p {
+          margin:0;
+          padding-left:300px;
+          display:inline-block;
+          white-space:nowrap;
+
+          animation-name:marquee;
+          animation-timing-function:linear;
+          animation-duration:10s;
+          animation-iteration-count:infinite;
+        }
+
+        @keyframes marquee1 {
+          from   { transform: translate(0%);}
+          99%,to { transform: translate(-100%);}
+        }
+
+        #sw-container {
+          width: 940px;
+          margin: 10px auto;
+          padding: 20px;
+          border: 3px solid #bcbcbc;
+          border-radius: 30px;
+        }
+        #sw-header {
+          padding: 20px;
+          margin-bottom: 20px;
+          border: 3px solid #bcbcbc;
+          border-radius: 10px;
+        }
+        #sw-content {
+          width: 580px;
+          height: 700px;
+          padding: 20px;
+          margin-bottom: 20px;
+          float: right;
+          border: 3px ridge #bcbcbc;
+          border-radius: 20px;
+        }
+      #sw-sidebar {
+        width: 200px;
+        height: 220px;
+        padding: 15px;
+        margin-bottom: 20px;
+        float: left;
+        border: 3px solid #bcbcbc;
+        background-image: url('실습media/afreeca.png');
+        background-size: 240px 240px;
+        border-radius: 40px;
+
+      }
+      #sw-sidebar1 {
+        width: 200px;
+        height: 220px;
+        padding: 15px;
+        margin-bottom: 20px;
+        float: left;
+        border: 3px solid #bcbcbc;
+        background-image: url('실습media/afreeca1.png');
+        background-size: 240px 240px;
+        border-radius: 20px;;
+      }
+      #sw-sidebar2 {
+        width: 200px;
+        height: 220px;
+        padding: 15px;
+        margin-bottom: 20px;
+        float: left;
+        border: 3px solid #bcbcbc;
+        background-image: url('실습media/youtube1.png');
+        background-size: 240px 240px;
+        border-radius: 20px;
+      }
+      #sw-sidebar3 {
+          width: 900px;
+          padding: 15px;
+          margin-bottom: 10px;
+          float: left;
+          border: 2px solid #bcbcbc;
+          border-radius: 20px;
+
+      }
+      #sw-footer {
+        clear: both;
+        padding: 10px;
+        border: 3px solid #bcbcbc;
+        border-radius: 20px;
+      }
+      @media ( max-width: 480px ) {
+        #sw-container {
+          width: auto;
+        }
+        #sw-content {
+          float: none;
+          width: auto;
+        }
+        #sw-sidebar {
+          float: none;
+          width: auto;
+        }
+        .div1 {
+          background :yellow; padding:5px; border: 5px dotted orange; margin: 50px;
+        }
+			}
+
+    </style>
+</head>
+
+<body>
+    <div id="sw-container">
+        <div id="sw-header">
+            <div class="marquee">
+                <p class="f8">형님 누나들 팬가입좀욧♥ </p>
+            </div>
+        </div>
+        <div><button type="button" onclick="location.href='p0.html'">홈버튼</button>
+            <button type="button" onclick=history.go(-1)>뒤로가기</button> <br>&nbsp;&nbsp; BGM
+            <div class="marquee1">
+                <p class="sk1">Skid Row - 18 & life ♬</p>
+            </div>
+        </div>
+        <br>
+        <div id="sw-content">
+            <h2>
+                <p class="ob">추천, 좋아요 눌러주세요'-'</p>
+            </h2>
+            <iframe width="500" height="280" src="http://vod.afreecatv.com/embed.php?type=station&isAfreeca=false&autoPlay=false&showChat=true&szBjId=mizho10&nStationNo=16895419&nBbsNo=46375458&nTitleNo=31256603&szCategory=00010000&szPart=REVIEW&szVodType=STATION&szSysType=flash1"
+                    frameborder="0" allowfullscreen></iframe>
+            <iframe width="500" height="280" src="https://www.youtube.com/embed/tQJLVFGB3XY?autoplay=0" frameborder="0" allowfullscreen></iframe>
+
+                    <button onclick="window.open('실습media/map.jpg',
+                      'myWin', 'left=480,top=130,width=700,height=1500')">원본보기</button>
+
+
+        </div>
+        <div id="sw-sidebar">
+
+        </div>
+        <div id="sw-sidebar1">
+
+        </div>
+        <div id="sw-sidebar2">
+        </div>
+        <div id="sw-sidevar3">
+            <div id="sw-sidebar3">
+
+                <body onload="init()">
+                    <h3>방명록</h3>
+                    <canvas id="myCanvas" style="background-color: #F4FA58" width="800" height="130">
+                    </canvas>
+                    <script>
+                        var canvas, context;
+    		function init() {
+    		canvas = document.getElementById("myCanvas");
+    		context = canvas.getContext("2d");
+
+    		context.lineWidth = 1;
+    		context.strokeStyle = "blue";
+
+    		canvas.addEventListener("mousemove", function (e) { move(e) }, false);
+    		canvas.addEventListener("mousedown", function (e) { down(e) }, false);
+    		canvas.addEventListener("mouseup", function (e) { up(e) }, false);
+    		canvas.addEventListener("mouseout", function (e) { out(e) }, false);
+    	  }
+
+    	var startX=0, startY=0;
+    	var dragging=false;
+    	function draw(curX, curY) {
+    		context.beginPath();
+    		context.moveTo(startX, startY);
+    		context.lineTo(curX, curY);
+    		context.stroke();
+    	  }
+    	function down(e) {
+    		startX = e.offset; startY = e.offsetY; dragging = true;
+    	  }
+    	function up(e) { dragging = false;}
+    	function move(e) {
+    		if(!dragging) return;
+    		var curX = e.offsetX, curY = e.offsetY;
+    		draw(curX, curY);
+    		startX = curX; startY = curY;
+    	  }
+    	function out(e) { dragging = false;}
+      function erase() {
+  	    var canvas = document.getElementById("myCanvas");
+  	    var context = canvas.getContext("2d");
+  	      context.clearRect(0, 0, canvas.width, canvas.height);
+      }
+  </script>
+                    <br>
+                    <button type="button" onclick="erase()">등록</button>
+                    <button type="button" onclick="erase()">지우기</button>
+            </div>
+            <div id="sw-footer">
+                <p>Copyright Woong</p>
+                <audio controls autoplay loop>
+                    <source src="실습media/18.mp3" type="audio/mp3">
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

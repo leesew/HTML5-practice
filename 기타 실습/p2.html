@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+        @import url(font.css);
+        @import url(liststyle1.css);
+        html { background:url("실습media/p1b4.jpg")
+        no-repeat center center fixed;
+        background-size: cover; }
+
+        .marquee {
+  				width:900px;
+				  padding:0.5em 0;
+  				overflow:hidden;
+  				background-color:none;
+  				margin-bottom:10px;
+  				position:relative;
+				}
+
+			  .marquee p:after {
+  			  content:"";
+  			  white-space:nowrap;
+  			  padding-right:50px;
+			  }
+
+			  .marquee p {
+  			  margin:0;
+  			  padding-left:900px;
+  			  display:inline-block;
+  			  white-space:nowrap;
+
+          animation-name:marquee;
+          animation-timing-function:linear;
+          animation-duration:10s;
+          animation-iteration-count:infinite;
+        }
+
+        @keyframes marquee {
+          from   { transform: translate(0%);}
+          99%,to { transform: translate(-100%);}
+        }
+        .marquee1 {
+          width:500px;
+          padding:0.5em 0;
+          overflow:hidden;
+          background-color:none;
+          margin-bottom:10px;
+          position:relative;
+        }
+
+        .marquee1 p:after {
+          content:"";
+          white-space:nowrap;
+          padding-right:50px;
+        }
+
+        .marquee1 p {
+          margin:0;
+          padding-left:300px;
+          display:inline-block;
+          white-space:nowrap;
+
+          animation-name:marquee;
+          animation-timing-function:linear;
+          animation-duration:10s;
+          animation-iteration-count:infinite;
+        }
+
+        @keyframes marquee1 {
+          from   { transform: translate(0%);}
+          99%,to { transform: translate(-100%);}
+        }
+      #sw-container {
+        width: 940px;
+        margin: 10px auto;
+        padding: 20px;
+        border: 3px solid #bcbcbc;
+        border-radius: 40px;
+      }
+      #sw-header {
+        padding: 20px;
+        margin-bottom: 20px;
+        border: 3px solid #bcbcbc;
+        border-radius: 20px;
+      }
+      #sw-content {
+        width: 580px;
+        height: 760px;
+        padding: 20px;
+        margin-bottom: 20px;
+        float: right;
+        border: 3px solid #bcbcbc;
+        border-radius: 20px;
+			}
+      #sw-sidebar {
+        width: 210px;
+        height: 220px;
+        padding: 15px;
+        margin-bottom: 20px;
+        float: left;
+        border: 5px ridge orange;
+        background-image: url('실습media/figure.gif');
+        background-size: 240px 240px;
+        border-radius: 40px;
+			}
+			#sw-sidebar1 {
+        width: 220px;
+        padding: 15px;
+        margin-bottom: 20px;
+        float: left;
+        border: 3px solid #bcbcbc;
+        border-radius: 20px;
+      }
+			#sw-sidebar2 {
+        width: 220px;
+        height: 220px;
+        padding: 15px;
+        margin-bottom: 20px;
+        float: left;
+        border: 3px solid #bcbcbc;
+        background-image: url('실습media/tr.gif');
+        background-size: 240px 240px;
+        border-radius: 20px;
+      }
+      #sw-sidebar3 {
+          width: 900px;
+          padding: 15px;
+          margin-bottom: 10px;
+          float: left;
+          border: 2px solid #bcbcbc;
+          background : none;
+          border-radius: 20px;
+
+			}
+      #sw-footer {
+        clear: both;
+        padding: 10px;
+        border: 3px solid #bcbcbc;
+        border-radius: 20px;
+      }
+      @media ( max-width: 480px ) {
+        #sw-container {
+          width: auto;
+        }
+        #sw-content {
+          float: none;
+          width: auto;
+        }
+        #sw-sidebar {
+          float: none;
+          width: auto;
+        }
+			}
+			/* css나 js삽입예정*/
+    </style>
+</head>
+
+<body>
+    <div id="sw-container">
+        <div id="sw-header">
+            <div class="marquee">
+                <p class="asd">과도한 수집은 금지...</p>
+            </div>
+        </div>
+        <div><button type="button" onclick="location.href='p0.html'">홈버튼</button>
+            <button type="button" onclick=history.go(-1)>뒤로가기</button> <br>&nbsp;&nbsp;
+        </div><br>
+        <div id="sw-content">
+            <h2>
+                <p class="ob"><mark>Figure</mark></p>
+            </h2>
+            <p>트랜스포머<p>
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/FmSVzR4OZe4?autoplay=1"
+                      frameborder="0" allowfullscreen></iframe>
+                    <p>트랜스포머는 2007년 파라마운트 픽처스와 드림웍스가 하스브로와
+                      타카라토미 장난감인 트랜스포머로 기반으로 하여 만든 프랜차이즈이다.
+                      영화 세계관을 의미할때 트랜스포머 시네마틱 유니버스라고도 한다</P>
+
+                      <div>
+                <button onclick="window.open('실습media/p1kakao.jpg',
+                            'myWin', 'left=480,top=130,width=570,height=420')">꾸욱</button>
+                            <button onclick="window.open('실습media/p1kakao.jpg',
+                                        'myWin', 'left=480,top=130,width=570,height=420')">꾸욱</button>
+                                        <button onclick="window.open('실습media/p1kakao.jpg',
+                                                    'myWin', 'left=480,top=130,width=570,height=420')">꾸욱</button>
+                                                    <button onclick="window.open('실습media/p1kakao.jpg',
+                                                                'myWin', 'left=480,top=130,width=570,height=420')">꾸욱</button>
+        </div></div>
+        <div id="sw-sidebar">
+
+
+        </div>
+        <div id="sw-sidebar1">
+            <h3><p class="f3">취미생활</p></h3>
+            <ul>
+                <li><a href="p1.html">드라이브</a></li>
+                <li><a href="p2.html">수집가</a></li>
+                <li><a href="p3.html">맛집, 명소</a></li>
+                <li><a href="p4.html">1인 방송시대</a></li>
+            </ul>
+        </div>
+        <div id="sw-sidebar2">
+        </div>
+        <div id="sw-sidebar3">
+
+            <body onload="init()">
+                <h3>방명록</h3>
+                <canvas id="myCanvas" style="background-color:#E6E0F8" width="800" height="130">
+                </canvas>
+                <script>
+                    var canvas, context;
+  		function init() {
+  		canvas = document.getElementById("myCanvas");
+  		context = canvas.getContext("2d");
+
+  		context.lineWidth = 1;
+  		context.strokeStyle = "blue";
+
+  		canvas.addEventListener("mousemove", function (e) { move(e) }, false);
+  		canvas.addEventListener("mousedown", function (e) { down(e) }, false);
+  		canvas.addEventListener("mouseup", function (e) { up(e) }, false);
+  		canvas.addEventListener("mouseout", function (e) { out(e) }, false);
+  	  }
+
+  	var startX=0, startY=0;
+  	var dragging=false;
+  	function draw(curX, curY) {
+  		context.beginPath();
+  		context.moveTo(startX, startY);
+  		context.lineTo(curX, curY);
+  		context.stroke();
+  	  }
+  	function down(e) {
+  		startX = e.offset; startY = e.offsetY; dragging = true;
+  	  }
+  	function up(e) { dragging = false;}
+  	function move(e) {
+  		if(!dragging) return;
+  		var curX = e.offsetX, curY = e.offsetY;
+  		draw(curX, curY);
+  		startX = curX; startY = curY;
+  	  }
+  	function out(e) { dragging = false;}
+    function erase() {
+	    var canvas = document.getElementById("myCanvas");
+	    var context = canvas.getContext("2d");
+	      context.clearRect(0, 0, canvas.width, canvas.height);
+    }
+</script>
+                <br>
+                <button type="button" onclick="erase()">등록</button> &nbsp;
+                <button type="button" onclick="erase()">지우기</button>
+            </div>
+        <div id="sw-footer">
+            <p>Copyright Woong</p>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

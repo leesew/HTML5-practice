@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>큰 자리수와 낮은자리수 같은지 비교</title>
+</head>
+<body>
+	<script>
+			var num = prompt("숫자 입력", "0");
+		if(!isNaN(num)) {
+			var n = parseInt(num);
+		if(n > 0) {
+			var x = n%10; //큰 자리수
+			var y = 0; //낮은 자리수
+		while(n != 0) {
+		 	y = n % 10;
+		 	n = Math.floor(n/10);
+		}
+		if(y == x)
+				document.write(num + ": 같음");
+		else
+				document.write(num + ": 다름");
+			}
+		}
+</script>
+</body>
+</html>

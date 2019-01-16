@@ -1,0 +1,31 @@
+.marquee {
+  width:900px;
+  padding:0.5em 0;
+  overflow:hidden;
+  background-color:none;
+  margin-bottom:10px;
+  position:relative;
+  }
+
+.marquee p:after {
+  content:"";
+  white-space:nowrap;
+  padding-right:50px;
+  }
+
+.marquee p {
+  margin:0;
+  padding-left:900px;
+  display:inline-block;
+  white-space:nowrap;
+
+  animation-name:marquee;
+  animation-timing-function:linear;
+  animation-duration:10s;
+  animation-iteration-count:infinite;
+  }
+
+  @keyframes marquee {
+    from   { transform: translate(0%);}
+    99%,to { transform: translate(-100%);}
+  }

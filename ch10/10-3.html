@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<title>window.lacation으로 웹 사이트 접속</title>
+<script>
+function load() {
+	var select = document.getElementById("select")
+	var url = select.options[select.selectedIndex].value;
+	window.open(url, "", "width=700,height=500");
+
+}
+</script>
+</head>
+<body>
+<h3>옵션 선택으로 웹 사이트 접속</h3>
+<hr>
+접속할 사이트<br><br>
+<select id="select" onchange="load()">
+	<option value="http://www.naver.com" >네이버
+	<option value="http://www.google.com" selected>구글
+	<option value="http://www.oracle.com">오라클
+</select>
+<p>
+
+</body>
+</html>
